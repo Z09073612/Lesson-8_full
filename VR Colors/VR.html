@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../VR Colors/assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/intro-regular.ttf">
     <title>VR</title>
 </head>
 <body>
-    <header>
-        <h1>ВИАРУШКА</h1>
-        <h5>КОРЗИНА</h5>
+    <div class="container">
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/image/sign.svg" alt="Sign">
+            <img src="./assets/image/logo.svg" alt="ВИАРУШКА">
+        </div>
+        <button class="header__basket">КОРЗИНА</button>
     </header>
-    <main>
-        <h2>Виртуальная реальность без проводов</h2>
-        <p>Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
-        <h3>КУПИТЬ</h3>
+    <main class="main">
+        <div class="main__left">
+            <h2 class="main__title">Виртуальная реальность без проводов</h2>
+            <p class="main__text">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
+            <button class="main__basket btn">КУПИТЬ</button>
+        </div>
+        <div class="main__right"></div>
+        <nav class="nav">
+            <a class="nav__link" href=".//VR_main.html">Возможности</a>
+            <a class="nav__link" href="#">Где купить</a>
+            <a class="nav__link" href="#">Доставка</a>
+            <a class="nav__link" href="#">Помощь</a>
+        </nav>
     </main>
-    <nav>
-        <a href=".//VR_main.html">Возможности</a>
-        <a href="#">Где купить</a>
-        <a href="#">Доставка</a>
-        <a href="#">Помощь</a>
-    </nav>
+</div>
 </body>
 </html>

@@ -1,0 +1,86 @@
+### Вопросы Неделя 8
+1. Какие основные преимущества Bootstrap?
+Bootstrap имеет множество готовых и проверенных решений, благодаря чему можно быстро разработать сайт и для этого можно иметь лишь минимальные знания кодинга. Много информационных материалов в открытом доступе для поиска конкретного решения. Кроссбраузерность.
+
+2. Как сделать желтую кнопку с помощью Bootstrap?
+<button type="button" class="btn btn-outline-warning">Кнопка</button>
+
+3. Каким кодом можно сделать такую сетку?
+    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c92145de-3f68-467a-982b-a03446074357/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c92145de-3f68-467a-982b-a03446074357/Untitled.png)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container_color{
+            background-color: palevioletred;
+        }
+        .gallery_style, .title_style, .buybox_style, .description_style, .related_style{
+            border: 5px solid aliceblue;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container container_color">
+        <div class="row">
+            <div class="col-6 gallery_style" style="height:60vh;">Gallery</div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col title_style" style="height: 15vh;">Title</div>  
+                </div>
+                <div class="row">
+                    <div class="col buybox_style" style="height: 45vh;">Buy Box</div>
+                </div> 
+            </div>  
+            <div class="col-12 description_style" style="height: 20vh;">Description</div>
+            <div class="col-12 related_style" style="height: 20vh;">Related</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+</body>
+</html>
+
+4. Каким компонентом Bootstrap можно задать такой элемент?
+    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/100332d0-fcea-4f74-8070-52f051f57524/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/100332d0-fcea-4f74-8070-52f051f57524/Untitled.png)
+Компонент Прогрессбар - класс .progress. В данном случае с размещением цифр (25%) внутри подкласса .progress-bar.
+
+5. Как убрать поля между колонками?
+С помощью доп.класса no-gutters для row.
+
+6. Как сделать навигацию на Bootstrap?
+С помощью класса nav и класса nav-link для ссылок <a>.
+
+7. Что такое колонка **auto-layout ?**
+Колонка auto-layout - это класс col, которому не указывается количество колонок, которые он занимает. Колонка просто займет всё доступное свободное пространство в ряду. Если колонок несколько, то пространство между ними автоматически распределится так, что все колонки будут иметь равную ширину. Благодаря auto-layout, в ряду может быть больше 12 колонок.
+
+8. Как сделать центрирование содержимого по горизонтали? А по вертикали?
+Горизонтальное выравнивание row по центру осуществляется через justify-content-center.
+Вертикальное выравнивание row осуществляется через align-items-center. Также можно центрировать по вертикали отдельные колонки из row, задав им класс align-self-center.
+Центрирование содержимого в col осуществляется через:
+my-auto - по вертикали,
+mx-auto - по горизонтали.
+
+9. Как задать адаптивность для колонки шириной в 50%, чтобы при ширине экрана меньше 768px она становилась шириной на весь экран?
+<div class="container">
+   <div class="row">
+      <div class="col-lg-6 col-md-12">Колонка 1</div>
+      <div class="col-lg-6 col-md-12">Колонка 2</div>
+   </div>
+</div>
+
+10. Что произойдет, если колонок станет больше 12?
+13-я и последующие колонки переносятся на следующую строку ("wrapping колонок").
+
+11. Как задать иконку инстаграм через font awasome?
+Необходимо подключить к коду HTML Font Awesome через ссылку или скачанный файл и затем прописать иконку через тег <i>.
+<i class="fa fa-instagram" aria-hidden="true"></i>
+
+12. Чем отличается container от container-fluid?
+container имеет фиксированную ширину контейнера и центрирует его по середине шаблона, а с container-fluid контейнер занимает ширину во весь экран.
