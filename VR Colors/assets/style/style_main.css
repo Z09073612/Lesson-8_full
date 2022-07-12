@@ -1,0 +1,36 @@
+.container{
+    margin: 0 auto;
+    width: 98vw;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+}
+.header{
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    margin-left: 3em;
+    margin-top: 2em;
+}
+.header__basket{
+    margin-right: 2.5em;
+    margin-top: 2em;
+    background-color: #5222D0;
+    border-radius: 100px;
+    border: none;
+    height: 38px;
+    width: 115px; 
+    max-width: 100%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.81em;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.title{
+    grid-row: 2/3;
+}

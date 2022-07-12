@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .container{
-    margin: 0;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 5% 85%;
     width: 98vw;
     height: 95vh;
 }
@@ -11,27 +12,22 @@
     display: flex;
     justify-content: space-between;
 }
-/*.header__up{
-    grid-row: 1/2;
-    background-image:url(..//image/browser.png);
-    background-repeat: no-repeat;
-}*/
 .header__logo{
-    margin-left: 75px;
-    margin-top: 50px;
+    margin-left: 3em;
+    margin-top: 2em;
 }
 .header__basket{
-    margin-right: 74px;
-    margin-top: 49px;
+    margin-right: 2.5em;
+    margin-top: 2em;
     background-color: #5222D0;
     border-radius: 100px;
     border: none;
     height: 38px;
     width: 115px; 
     max-width: 100%;
-    font-family: 'Intro-Regular';
+    font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 0.81em;
     line-height: 13px;
     color: #FFFFFF;
@@ -45,21 +41,25 @@
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 5.5em;
+    margin-top: 3em;
 }
 .main__title{
     width: 542px;
     max-width: 100%;
     height: 216px;
-    font-family: 'Intro-Regular';
-    font-style: normal;
-    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-style: bold;
+    font-weight: 900;
     font-size: 3.75em;
     line-height: 120%;
     color: #000000;
 }
 .main__text{
+    max-width: 487px;
+   
+    margin-bottom: 1em;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
@@ -74,11 +74,19 @@
     border: none;
     border-radius: 100px;
     font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
+    font-style: bold;
+    font-weight: 900;
     font-size: 2.19em;
     line-height: 35px;
     color: #FFFFFF;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn:hover{
+    cursor: pointer;
 }
 .main__right{
     grid-column: 2/3;
@@ -93,12 +101,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+    margin-bottom: 2.5em;
 }
 .nav__link{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 160%;
     color: #5222D0;
     text-decoration: none;
