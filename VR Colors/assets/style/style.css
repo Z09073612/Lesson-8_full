@@ -4,17 +4,24 @@
     height: 95vh;
 }
 .header{
-    grid-row: 1/2;
+    /*grid-row: 1/2;*/
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
 }
 .header__logo{
     margin-left: 3em;
+<<<<<<< HEAD
     margin-top: 1em;
 }
 .header__basket{
     margin-right: 2.5em;
     margin-top: 1em;
+=======
+}
+.header__basket{
+    margin-right: 2.5em;
+>>>>>>> 3ab8e47e5adf9178b69fa82718ecf0ec010c7581
     background-color: #5222D0;
     border-radius: 100px;
     border: none;
@@ -29,18 +36,31 @@
     color: #FFFFFF;
 }
 .main{
-    grid-row: 2/3;
+    /*grid-row: 2/3;*/
     display: grid;
     grid-template-columns: 55% 45%;
 }
 .main__left{
-    grid-column: 1/2;
+    /*grid-column: 1/2;*/
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
     margin-left: 5.5em;
+<<<<<<< HEAD
 }
 .main__title{
     margin: 1.5em 0 10px;
+=======
+    /*margin-top: 3em;*/
+}
+.main__title{
+    /*width: 542px;
+    max-width: 100%;
+    height: 216px;*/
+    margin: 0 0 10px;
+>>>>>>> 3ab8e47e5adf9178b69fa82718ecf0ec010c7581
     font-family: 'Lato';
     font-style: bold;
     font-weight: 900;
@@ -49,7 +69,12 @@
     color: #000000;
 }
 .main__text{
+<<<<<<< HEAD
     margin: 0 0 20px;
+=======
+    /*width: 487px;*/
+    margin-bottom: 1em;
+>>>>>>> 3ab8e47e5adf9178b69fa82718ecf0ec010c7581
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
@@ -58,8 +83,14 @@
     color: #000000;
 }
 .main__basket{
+<<<<<<< HEAD
     width: 244px;
     height: 74px;
+=======
+    width: 274px;
+    height: 84px;
+    padding: 0;
+>>>>>>> 3ab8e47e5adf9178b69fa82718ecf0ec010c7581
     background: #5222D0;
     border: none;
     border-radius: 100px;
@@ -68,6 +99,7 @@
     font-size: 2em;
     line-height: 35px;
     color: #FFFFFF;
+    align-self: flex-start;
 }
 .btn{
     display: flex;
@@ -77,15 +109,21 @@
 .btn:hover{
     cursor: pointer;
 }
-.main__right{
-    grid-column: 2/3;
+    /*.main__right{
+grid-column: 2/3;
     grid-row: 1/3;
-    background-image: url(..//image/guy_2.svg);
+    /*background-image: url(..//image/guy_2.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+}*/
+.main__right img{
+    width: 95%;
+    max-width: 100%;
+    float: right;
 }
 .nav{
+<<<<<<< HEAD
     grid-row: 2/3;
     grid-column: 1/3;
     display: flex;
@@ -93,6 +131,13 @@
     align-items: flex-end;
     margin: 2.5em 0 0 3.5em;
     width: 50%;
+=======
+    /*grid-row: 2/3;*/
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: 1.5em;
+>>>>>>> 3ab8e47e5adf9178b69fa82718ecf0ec010c7581
 }
 .nav__link{
     font-family: 'Roboto Slab';
